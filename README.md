@@ -2,7 +2,7 @@
 
 A robot planning simulation where Pacman estimates its position, maps the environment using a laser sensor, and navigates to a goal while avoiding ghosts in a randomly generated maze.
 
-<img width="1366" alt="Visual" src="figures/visual.png">
+<img width="1366" alt="Visual" src="figures/visual.PNG">
 <hr>
 
 ## Setup
