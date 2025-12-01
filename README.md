@@ -36,16 +36,11 @@ A robot planning simulation where Pacman estimates its position, maps the enviro
 
 You can adjust the simulation parameters, such as window size, map dimensions, and game mechanics, in **`constants.py`**.
 
-Key parameters include:
--   `NUM_GHOSTS`: Number of ghosts chasing Pacman.
--   `PING_PERIOD`: How often ghosts update their target (Pacman's position).
--   `N_JOBS`: Number of parallel threads used for path planning.
-
 ## How It Works
 
 The simulation combines several robotic planning concepts:
 
--   **Path Estimation (EST)**: Pacman uses an Expanding Space Tree (EST) algorithm (similar to RRT) to explore the free space and find a path to the goal. This runs in parallel for Pacman and all ghosts.
+-   **Path Estimation (EST)**: Pacman uses an Expanding Space Tree (EST) algorithm (similar to RRT) to explore the free space and find a path to the goal. 
 -   **Mapping**: The robot builds a map of the environment using a **Log-Odds Occupancy Grid**. A simulated laser sensor casts rays to detect obstacles, updating the probability of each grid cell being occupied or free.
 -   **Sensing**: The `LaserSensor` class simulates a 2D LiDAR, generating point clouds from the environment map.
 -   **Navigation**: Pacman continually replans its path based on the current map and the estimated positions of ghosts.
