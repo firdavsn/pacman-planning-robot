@@ -47,5 +47,5 @@ The simulation combines several robotic planning concepts:
 
 ---
 
-This was for Caltech's ME 133b class final project.
+This was for Caltech's ME 133b (Robotics: Path Planning) class final project during Winter 2024.
 Other contributors: Julian Peres (class of 2024), Isabela Ceniceros (class of 2025)
